@@ -1,7 +1,8 @@
 * {
 	margin:0;
 	padding:0;
-	box-sizing:border-box;
+	overflow: hidden;
+  box-sizing: border-box;
 }
 
 .container {
@@ -121,16 +122,11 @@
 }
 
 .div-5 > .sub-div-5 > button {
-	all:unset;
-	height:50px;
+	
 	width:56%;
 	border-radius:29px;
 	text-align:center;
-	background:#000000;
-	opacity:0.5;
-	color:#FFF;
-	font-weight:600;
-	font-family:Century Gothic;
+	
 }
 
 /* 
@@ -138,6 +134,8 @@
 */
 .div-6 {
 	display:flex;
+  justify-content:center;
+  margin-top: 20px;
 }
 
 .div-6 > .sub-div-6 {
@@ -148,11 +146,46 @@
 
 .div-6 > .sub-div-6 > a {
 	text-decoration:none;
-	color:#1194FF;
-	font-size:14px;
-	margin-top:20px;
-	font-family:'Times New Roman', Times, serif;
+	color:#000000;
+	font-size:24px;
+	margin-top:3px;
+  font-weight: 900;
+	
 }
+.div-6 > .sub-div-6 > button {
+	
+	
+	width:56%;
+	border-radius:29px;
+	text-align:center;
+	
+}
+
+
+/* 
+6
+*/
+.div-7 {
+	display:flex;
+  justify-content:center;
+  margin-top: 20px;
+}
+
+.div-7 > .sub-div-7 {
+	flex:1;
+	display:flex;
+	justify-content:center;
+}
+
+.div-7 > .sub-div-7 > a {
+	text-decoration:none;
+	color:#3681d6;
+	font-size:15px;
+	margin-top:3px;
+  font-family:'Century Gothic', Times, serif;
+}
+
+
 
 @media only screen and (max-width: 480px) and (min-width: 320px) {
 	.div-3 > .sub-div-3,.div-4 > .sub-div-4 {
@@ -171,4 +204,42 @@
 		width:71%;
 	}
 
+}
+ .h3 {
+  width:445px;
+  height:75px;
+  border:4px ;
+  background:linear-gradient(to right, #1194FF, rgb(255, 255, 255));
+ }
+ .column {
+  background-image: url("TwitterBackgroundPage_2.png");
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: relative;
+ }
+
+.forgot {
+  margin-top: 50ch;
+
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 100vh; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#sign-up {
+
+  margin-top: 15vh;
 }
