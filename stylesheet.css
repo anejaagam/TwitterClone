@@ -21,14 +21,16 @@
 }
 
 .sub-div-1 > .icon {
-	font-size:35px;
+	font-size:75px;
 	color:#1194FF;
 	margin:20px 0 30px 0;
+	margin-bottom: 5vh;
 }
 
 /* Div 2 */
 .div-2 {
 	display:flex;
+	margin-bottom: 10vh;
 }
 
 .div-2 > .sub-div-2 {
@@ -136,6 +138,7 @@
 	display:flex;
   justify-content:center;
   margin-top: 20px;
+  margin-bottom: 15vh;
 }
 
 .div-6 > .sub-div-6 {
@@ -185,6 +188,15 @@
   font-family:'Century Gothic', Times, serif;
 }
 
+.sub-div-7 > .sub-div-7 > button {
+	
+	
+	width:50%;
+	border-radius:29px;
+	text-align:center;
+	
+}
+
 
 
 @media only screen and (max-width: 480px) and (min-width: 320px) {
@@ -214,8 +226,8 @@
  .column {
   background-image: url("TwitterBackgroundPage_2.png");
   background-size: cover;
-  width: 100px;
-  height: 100px;
+  width: 100vw;
+  height: 100vh;
   display: inline-block;
   position: relative;
  }
@@ -242,4 +254,9 @@
 #sign-up {
 
   margin-top: 15vh;
+}
+button {
+	width: 50%;
+	border-radius: 29px !important;
+	text-align:center;
 }
