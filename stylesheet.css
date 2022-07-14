@@ -30,7 +30,7 @@
 /* Div 2 */
 .div-2 {
 	display:flex;
-	margin-bottom: 10vh;
+	margin-bottom: 5vh;
 }
 
 .div-2 > .sub-div-2 {
@@ -138,7 +138,7 @@
 	display:flex;
   justify-content:center;
   margin-top: 20px;
-  margin-bottom: 15vh;
+  margin-bottom: 5vh;
 }
 
 .div-6 > .sub-div-6 {
@@ -171,7 +171,7 @@
 .div-7 {
 	display:flex;
   justify-content:center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .div-7 > .sub-div-7 {
