@@ -13,13 +13,14 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase
 // Your web app's Firebase configuration
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     const firebaseConfig = {
-        apiKey: "AIzaSyDLUUA1F60yhRn_prxS-9CmJS5eFEYnvGM",
-        authDomain: "cosc310twitter-3323a.firebaseapp.com",
-        projectId: "cosc310twitter-3323a",
-        storageBucket: "cosc310twitter-3323a.appspot.com",
-        messagingSenderId: "705650666790",
-        appId: "1:705650666790:web:6e1ef08cc135edddcb65e7",
-        measurementId: "G-LGEL34JKBX"
+      apiKey: "AIzaSyAZBN3sDQyf9uqaZUsy9Yn6zfg4a7ILn9w",
+    authDomain: "cosc310twitter.firebaseapp.com",
+    databaseURL: "https://cosc310twitter-default-rtdb.firebaseio.com",
+    projectId: "cosc310twitter",
+    storageBucket: "cosc310twitter.appspot.com",
+    messagingSenderId: "138304780837",
+    appId: "1:138304780837:web:c3316f0017065a18835dcc",
+    measurementId: "G-YHND4DQS0N"
       };
     
       // Initialize Firebase
