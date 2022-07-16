@@ -1,3 +1,6 @@
+
+
+//-------------------RUN-----------------------------------//
 var textarea = $('.term');
 var speed = 50; //Writing speed in milliseconds
 
