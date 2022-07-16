@@ -8,7 +8,7 @@
     // https://firebase.google.com/docs/web/setup#available-libraries
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-app.js";
     import { getDatabase,ref, set,get } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-database.js";
-    import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-auth.js";
+    import { getAuth, createUserWithEmailAndPassword , signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-auth.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.0/firebase-analytics.js";
 // Your web app's Firebase configuration
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -29,6 +29,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase
       const auth = getAuth(app)
       const analytics = getAnalytics(app);
       const signUp = document.getElementById("signUp");
+      const login = document.getElementById("loginbtn");
       
       
   
@@ -87,3 +88,51 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.0/firebase
   });
   
   })
+
+
+  //-------------------------LOGIN---------------------------------//
+
+  var retemail = document.getElementById("Email").value;
+  var retpass = document.getElementById("Password").value;
+
+  
+  signInWithEmailAndPassword(auth, retemail, retpass)
+    .then((userCredential) => {
+      // Signed in 
+      const user = userCredential.user;
+      alert("user logged in");
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+    });
+
+
+
+    login.addEventListener('click', (e)=>{
+      //Initializing DOM elements
+     
+      var retpass = document.getElementById("Password").value;
+      var retemail = document.getElementById("Email").value;
+      
+      
+      
+
+      signInWithEmailAndPassword(auth, retemail, retpass)
+      .then((userCredential) => {
+        // Signed in 
+        const user = userCredential.user;
+        alert("user logged in");
+        window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"; //Move on to next window
+        // ...
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+      });
+      
+    })
+   
+  
+
