@@ -1,3 +1,6 @@
+
+
+//-------------------RUN-----------------------------------//
 var textarea = $('.term');
 var speed = 50; //Writing speed in milliseconds
 
@@ -51,4 +54,6 @@ function feedbacker() {
       }
     },time);
 }
-
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
