@@ -3,14 +3,18 @@
 
 <head>
     <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta http-equiv='X-UA-Compatible' >
     <title>Twitter Profile</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='userStyle.css'>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' type='text/css' href='lib/styles/userStyle.css'>
+    
+    
+    <script src="https://kit.fontawesome.com/2ae3d21054.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@500&display=swap" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -18,39 +22,40 @@
     <a href="#totop" class="fa fa-arrow-up" id="fixedarrow"></a>
     <!-- <a href="#totop"><i class="fa fa-arrow-up" aria-hidden="true" id="fixedarrow"></i></a> -->
     <!-- LEFT VERTICAL FIXED MENU -->
-
-    <div class="leftverticalmenu">
-        <a href="#" class="fa fa-twitter" id="twittericon"></a>
+<div class="container">
+    <div class="row">
+    <div class="col-3">
+        <div class="container">
         <ul>
-            <li><a href="#"><i class="fa fa-home" id="icons"></i>Home</a></li>
-            <li><a href="#"><i class="fa fa-hashtag" id="icons"></i>Explore</a></li>
-            <li><a href="#"><i class="fa fa-bell" id="icons"></i>Notification</a></li>
-            <li><a href="#"><i class="fa fa-envelope" id="icons"></i>Messages</a></li>
-            <li><a href="#"><i class="fa fa-bookmark" id="icons"></i>Bookmarks</a></li>
-            <li><a href="#"><i class="fa fa-list-alt" id="icons"></i>Lists</a></li>
-            <li><a href="twitterprofile.html"><img src="TwitterBackgroundPage.png" alt="profile"
-                        class="profileimage">Profile</a></li>
-            <li><a href="#"><i class="fa fa-align-center" id="icons"></i>More</a></li>
+            <li style="padding-bottom: 10px;"><i href="#" class="fa-brands fa-xl fa-twitter"id="twittericon"></i></li>
+            <li><button type="menu" class = "navbar-btn "><a href="#"><i class="fa-solid fa-home profileimage" ></i>Home</a></button></li>
+            <li><button type = "menu" class = "navbar-btn "><a href="#"><i class="fa-solid fa-search profileimage" ></i>Explore</a></button></li>
+            <li><button type = "menu" class = "navbar-btn"><a href="#"><i class="fa-solid fa-bell  profileimage" ></i>Notification</a></button></li>
+            <li><button type = "menu" class = "navbar-btn"><a href="#"><i class="fa-solid fa-envelope  profileimage" ></i>Messages</a></button></li>
+            <li><button type = "menu" class = "navbar-btn"><a href="#"><i class="fa-solid fa-bookmark  profileimage" ></i>Bookmarks</a></button></li>
+            <li><button type = "menu" class = "navbar-btn"><a href="#"><i class="fa-solid fa-user  profileimage" ></i>Profile</a></button></li>
+            <li><button class="btn btn-primary tweet-btn"  id = "ComposeTweet">Tweet</button></li>
+            
 			
         </ul>
-		<figure>Tweet</figure>
+    </div>
     </div>
 
     <!-- END OF LEFT FIXED MENU -->
 
-    <div class="flexcontainer">
+    <div class="col-6">
         <div class="middlecontainer">
             <section class="headsec">
                 <i class="fa fa-arrow-left" id="fa-arrow-left"></i>
                 <div>
-                    <h3>Anirudh Devarakonda</h2>
-                        <span>57 Tweets</span>
+                    <h5 id="header-username">Anirudh Devarakonda</h5>
+                        <p id="header-tweetcnt">57 Tweets</pn>
                 </div>
             </section>
             <section class="twitterprofile">
                 <div class="headerprofileimage">
-                    <img src="TwitterBackgroundPage_2.png" alt="header" id="headerimage">
-                    <img src="TwitterBackgroundPage.png" alt="profile pic" id="profilepic">
+                    <img src="lib/assets/TwitterBackgroundPage_2.png" alt="header" id="headerimage">
+                    <img src="lib/assets/TwitterBackgroundPage.png" alt="profile pic" id="profilepic">
                     <div class="editprofile">Edit Profile</div>
                 </div>
                 <div class="bio">
@@ -81,7 +86,7 @@
                 </div>
             </section>
             <section class="mytweets">
-                <div><img src="TwitterBackgroundPage.png" alt="avi" class="avi"></div>
+                <div><img src="lib/assets/TwitterBackgroundPage.png" alt="avi" class="avi"></div>
                 <div class="tweetbody">
                     <div class = "usename">Anirudh Devarakonda @andy_dev - Feb. 11</div>
                     <div class="tweetcontent">Always check the replies for clarification before you retweet a tweet,
@@ -96,17 +101,19 @@
 
             </section>
         </div>
+        </div>
+    
 
         <!-- RIGHT CONTAINER -->
 
-        <div class="rightcontainer">
+        <div class="col-3">
             <section class="searchbar">
                 <div class="searchicon"><i class="fa fa-search" aria-hidden="true"></i></div>
                 <input type="text" name="search" id="searchbox" placeholder="Search Twitter">
             </section>
 
             <section class="twittermedia">
-                <div><img src="TwitterBackgroundPage.png" alt="media"></div>
+                <div><img src="lib/assets/TwitterBackgroundPage.png" alt="media"></div>
                 
             </section>
 
@@ -134,8 +141,9 @@
         </div>
 
     </div>
-
+</div>
   
 </body>
+
 
 </html>
