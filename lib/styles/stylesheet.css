@@ -224,7 +224,7 @@
   background:linear-gradient(to right, #1194FF, rgb(255, 255, 255));
  }
  .column {
-  background-image: url("TwitterBackgroundPage_2.png");
+  background-image: url("../assets/TwitterBackgroundPage_2.png");
   background-size: cover;
   width: 100vw;
   height: 100vh;
